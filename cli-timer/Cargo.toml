@@ -1,0 +1,11 @@
+[package]
+name = "cli-timer"
+version = "0.1.0"
+authors = ["Silas J. Matson <silas@infinite.red>"]
+
+[dependencies]
+clap = "2"
+ctrlc = { version = "3.0", features = ["termination"] }
+
+[profile.release]
+lto = true
